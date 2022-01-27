@@ -20,7 +20,7 @@ location.search.substr(1).split("&").forEach(function(item) {get[item.split("=")
 var data;
 var xobj = new XMLHttpRequest();
 xobj.overrideMimeType("application/json");
-xobj.open("GET", "/data.json", false);
+xobj.open("GET", "data.json", false);
 xobj.onreadystatechange = function () {
 	if (xobj.readyState == 4 && xobj.status == "200") {
 		data = JSON.parse(xobj.responseText);
