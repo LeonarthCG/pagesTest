@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<script type="text/javascript" src="/code.js"></script>
+		<title>Evo line Builder</title>
+		<meta charset="utf-8" />
+	</head>
+	
+	<body onload="init()">
+		<div>
+			<!-- mon info table -->
+			<table class="thick-border">
+				<tr>
+					<th class="thin-border"><p>Baby I / Fresh</p></th>
+					<th class="thin-border"><p>Baby II / In-Training</p></th>
+					<th class="thin-border"><p>Child / Rookie</p></th>
+					<th class="thin-border"><p>Adult / Champion</p></th>
+					<th class="thin-border"><p>Perfect / Ultimate</p></th>
+					<th class="thin-border"><p>Ultimate / Mega</p></th>
+				</tr>
+				<tr>
+					<td class="thin-border" style="text-align:center" id="m0Img"></td>
+					<td class="thin-border" style="text-align:center" id="m1Img"></td>
+					<td class="thin-border" style="text-align:center" id="m2Img"></td>
+					<td class="thin-border" style="text-align:center" id="m3Img"></td>
+					<td class="thin-border" style="text-align:center" id="m4Img"></td>
+					<td class="thin-border" style="text-align:center" id="m5Img"></td>
+				</tr>
+				<tr>
+					<td class="thin-border"><p><b>Name: </b></p><p id="m0Name"/></script></td>
+					<td class="thin-border"><p><b>Name: </b></p><p id="m1Name"/></script></td>
+					<td class="thin-border"><p><b>Name: </b></p><p id="m2Name"/></script></td>
+					<td class="thin-border"><p><b>Name: </b></p><p id="m3Name"/></script></td>
+					<td class="thin-border"><p><b>Name: </b></p><p id="m4Name"/></script></td>
+					<td class="thin-border"><p><b>Name: </b></p><p id="m5Name"/></script></td>
+				</tr>
+				<tr>
+					<td class="thin-border"><b>Dub Name: </b></p><p id="m0Dub"/></td>
+					<td class="thin-border"><b>Dub Name: </b></p><p id="m1Dub"/></td>
+					<td class="thin-border"><b>Dub Name: </b></p><p id="m2Dub"/></td>
+					<td class="thin-border"><b>Dub Name: </b></p><p id="m3Dub"/></td>
+					<td class="thin-border"><b>Dub Name: </b></p><p id="m4Dub"/></td>
+					<td class="thin-border"><b>Dub Name: </b></p><p id="m5Dub"/></td>
+				</tr>
+				<tr>
+					<td class="thin-border"><b>Level: </b></p><p id="m0Level"/></td>
+					<td class="thin-border"><b>Level: </b></p><p id="m1Level"/></td>
+					<td class="thin-border"><b>Level: </b></p><p id="m2Level"/></td>
+					<td class="thin-border"><b>Level: </b></p><p id="m3Level"/></td>
+					<td class="thin-border"><b>Level: </b></p><p id="m4Level"/></td>
+					<td class="thin-border"><b>Level: </b></p><p id="m5Level"/></td>
+				</tr>
+				<tr>
+					<td class="thin-border"><b>Attribute: </b></p><p id="m0Attribute"/></td>
+					<td class="thin-border"><b>Attribute: </b></p><p id="m1Attribute"/></td>
+					<td class="thin-border"><b>Attribute: </b></p><p id="m2Attribute"/></td>
+					<td class="thin-border"><b>Attribute: </b></p><p id="m3Attribute"/></td>
+					<td class="thin-border"><b>Attribute: </b></p><p id="m4Attribute"/></td>
+					<td class="thin-border"><b>Attribute: </b></p><p id="m5Attribute"/></td>
+				</tr>
+				<tr>
+					<td class="thin-border"><b>Type: </b></p><p id="m0Type"/></td>
+					<td class="thin-border"><b>Type: </b></p><p id="m1Type"/></td>
+					<td class="thin-border"><b>Type: </b></p><p id="m2Type"/></td>
+					<td class="thin-border"><b>Type: </b></p><p id="m3Type"/></td>
+					<td class="thin-border"><b>Type: </b></p><p id="m4Type"/></td>
+					<td class="thin-border"><b>Type: </b></p><p id="m5Type"/></td>
+				</tr>
+				<tr>
+					<td class="thin-border"><b>Field: </b></p><p id="m0Field"/></td>
+					<td class="thin-border"><b>Field: </b></p><p id="m1Field"/></td>
+					<td class="thin-border"><b>Field: </b></p><p id="m2Field"/></td>
+					<td class="thin-border"><b>Field: </b></p><p id="m3Field"/></td>
+					<td class="thin-border"><b>Field: </b></p><p id="m4Field"/></td>
+					<td class="thin-border"><b>Field: </b></p><p id="m5Field"/></td>
+				</tr>
+				<tr>
+					<td class="thin-border"><b>X-Antibody: </b></p><p id="m0HasX"/></td>
+					<td class="thin-border"><b>X-Antibody: </b></p><p id="m1HasX"/></td>
+					<td class="thin-border"><b>X-Antibody: </b></p><p id="m2HasX"/></td>
+					<td class="thin-border"><b>X-Antibody: </b></p><p id="m3HasX"/></td>
+					<td class="thin-border"><b>X-Antibody: </b></p><p id="m4HasX"/></td>
+					<td class="thin-border"><b>X-Antibody: </b></p><p id="m5HasX"/></td>
+				</tr>
+			</table>
+			<div class="separator">
+			<!-- options and mon selector -->
+			<table class="thick-border">
+				<tr>
+					<td class="thin-column-border"><select id="l0List" onChange="onSelect(this.value, 0)"/></td>
+					<td class="thin-column-border"><select id="l1List" onChange="onSelect(this.value, 1)"/></td>
+					<td class="thin-column-border"><select id="l2List" onChange="onSelect(this.value, 2)"/></td>
+					<td class="thin-column-border"><select id="l3List" onChange="onSelect(this.value, 3)"/></td>
+					<td class="thin-column-border"><select id="l4List" onChange="onSelect(this.value, 4)"/></td>
+					<td class="thin-column-border"><select id="l5List" onChange="onSelect(this.value, 5)"/></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
