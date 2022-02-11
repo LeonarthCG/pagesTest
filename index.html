@@ -10,9 +10,11 @@
 	
 	<body onload="init()">
 		<div>
-			<!-- mon info table -->
 			<table class="thick-border">
-				<tr>
+				<tr class="darkPurple">
+					<th colspan="6" class="thick-border"><p>- Evolution Line -</p></th>
+				</tr>
+				<tr class="purple">
 					<th class="thin-border"><p>Baby I / Fresh</p></th>
 					<th class="thin-border"><p>Baby II / In-Training</p></th>
 					<th class="thin-border"><p>Child / Rookie</p></th>
@@ -21,82 +23,463 @@
 					<th class="thin-border"><p>Ultimate / Mega</p></th>
 				</tr>
 				<tr>
-					<td class="thin-border" style="text-align:center" id="m0Img"></td>
-					<td class="thin-border" style="text-align:center" id="m1Img"></td>
-					<td class="thin-border" style="text-align:center" id="m2Img"></td>
-					<td class="thin-border" style="text-align:center" id="m3Img"></td>
-					<td class="thin-border" style="text-align:center" id="m4Img"></td>
-					<td class="thin-border" style="text-align:center" id="m5Img"></td>
+					<td class="thin-border" style="text-align:center" id="m0Img">
+					<td class="thin-border" style="text-align:center" id="m1Img">
+					<td class="thin-border" style="text-align:center" id="m2Img">
+					<td class="thin-border" style="text-align:center" id="m3Img">
+					<td class="thin-border" style="text-align:center" id="m4Img">
+					<td class="thin-border" style="text-align:center" id="m5Img">
 				</tr>
 				<tr>
-					<td class="thin-border"><p><b>Name: </b></p><p id="m0Name"/></script></td>
-					<td class="thin-border"><p><b>Name: </b></p><p id="m1Name"/></script></td>
-					<td class="thin-border"><p><b>Name: </b></p><p id="m2Name"/></script></td>
-					<td class="thin-border"><p><b>Name: </b></p><p id="m3Name"/></script></td>
-					<td class="thin-border"><p><b>Name: </b></p><p id="m4Name"/></script></td>
-					<td class="thin-border"><p><b>Name: </b></p><p id="m5Name"/></script></td>
+					<td class="thin-border"><p><b>Name: </b></p><p id="m0Name"/>
+					<td class="thin-border"><p><b>Name: </b></p><p id="m1Name"/>
+					<td class="thin-border"><p><b>Name: </b></p><p id="m2Name"/>
+					<td class="thin-border"><p><b>Name: </b></p><p id="m3Name"/>
+					<td class="thin-border"><p><b>Name: </b></p><p id="m4Name"/>
+					<td class="thin-border"><p><b>Name: </b></p><p id="m5Name"/>
 				</tr>
 				<tr>
-					<td class="thin-border"><b>Dub Name: </b></p><p id="m0Dub"/></td>
-					<td class="thin-border"><b>Dub Name: </b></p><p id="m1Dub"/></td>
-					<td class="thin-border"><b>Dub Name: </b></p><p id="m2Dub"/></td>
-					<td class="thin-border"><b>Dub Name: </b></p><p id="m3Dub"/></td>
-					<td class="thin-border"><b>Dub Name: </b></p><p id="m4Dub"/></td>
-					<td class="thin-border"><b>Dub Name: </b></p><p id="m5Dub"/></td>
+					<td class="thin-border"><p><b>Dub Name: </b></p><p id="m0Dub"/>
+					<td class="thin-border"><p><b>Dub Name: </b></p><p id="m1Dub"/>
+					<td class="thin-border"><p><b>Dub Name: </b></p><p id="m2Dub"/>
+					<td class="thin-border"><p><b>Dub Name: </b></p><p id="m3Dub"/>
+					<td class="thin-border"><p><b>Dub Name: </b></p><p id="m4Dub"/>
+					<td class="thin-border"><p><b>Dub Name: </b></p><p id="m5Dub"/>
 				</tr>
 				<tr>
-					<td class="thin-border"><b>Level: </b></p><p id="m0Level"/></td>
-					<td class="thin-border"><b>Level: </b></p><p id="m1Level"/></td>
-					<td class="thin-border"><b>Level: </b></p><p id="m2Level"/></td>
-					<td class="thin-border"><b>Level: </b></p><p id="m3Level"/></td>
-					<td class="thin-border"><b>Level: </b></p><p id="m4Level"/></td>
-					<td class="thin-border"><b>Level: </b></p><p id="m5Level"/></td>
+					<td class="thin-border"><p><b>Level: </b></p><p id="m0Level"/>
+					<td class="thin-border"><p><b>Level: </b></p><p id="m1Level"/>
+					<td class="thin-border"><p><b>Level: </b></p><p id="m2Level"/>
+					<td class="thin-border"><p><b>Level: </b></p><p id="m3Level"/>
+					<td class="thin-border"><p><b>Level: </b></p><p id="m4Level"/>
+					<td class="thin-border"><p><b>Level: </b></p><p id="m5Level"/>
 				</tr>
 				<tr>
-					<td class="thin-border"><b>Attribute: </b></p><p id="m0Attribute"/></td>
-					<td class="thin-border"><b>Attribute: </b></p><p id="m1Attribute"/></td>
-					<td class="thin-border"><b>Attribute: </b></p><p id="m2Attribute"/></td>
-					<td class="thin-border"><b>Attribute: </b></p><p id="m3Attribute"/></td>
-					<td class="thin-border"><b>Attribute: </b></p><p id="m4Attribute"/></td>
-					<td class="thin-border"><b>Attribute: </b></p><p id="m5Attribute"/></td>
+					<td class="thin-border"><p><b>Attribute: </b></p><p id="m0Attribute"/>
+					<td class="thin-border"><p><b>Attribute: </b></p><p id="m1Attribute"/>
+					<td class="thin-border"><p><b>Attribute: </b></p><p id="m2Attribute"/>
+					<td class="thin-border"><p><b>Attribute: </b></p><p id="m3Attribute"/>
+					<td class="thin-border"><p><b>Attribute: </b></p><p id="m4Attribute"/>
+					<td class="thin-border"><p><b>Attribute: </b></p><p id="m5Attribute"/>
 				</tr>
 				<tr>
-					<td class="thin-border"><b>Type: </b></p><p id="m0Type"/></td>
-					<td class="thin-border"><b>Type: </b></p><p id="m1Type"/></td>
-					<td class="thin-border"><b>Type: </b></p><p id="m2Type"/></td>
-					<td class="thin-border"><b>Type: </b></p><p id="m3Type"/></td>
-					<td class="thin-border"><b>Type: </b></p><p id="m4Type"/></td>
-					<td class="thin-border"><b>Type: </b></p><p id="m5Type"/></td>
+					<td class="thin-border"><p><b>Type: </b></p><p id="m0Type"/>
+					<td class="thin-border"><p><b>Type: </b></p><p id="m1Type"/>
+					<td class="thin-border"><p><b>Type: </b></p><p id="m2Type"/>
+					<td class="thin-border"><p><b>Type: </b></p><p id="m3Type"/>
+					<td class="thin-border"><p><b>Type: </b></p><p id="m4Type"/>
+					<td class="thin-border"><p><b>Type: </b></p><p id="m5Type"/>
 				</tr>
 				<tr>
-					<td class="thin-border"><b>Field: </b></p><p id="m0Field"/></td>
-					<td class="thin-border"><b>Field: </b></p><p id="m1Field"/></td>
-					<td class="thin-border"><b>Field: </b></p><p id="m2Field"/></td>
-					<td class="thin-border"><b>Field: </b></p><p id="m3Field"/></td>
-					<td class="thin-border"><b>Field: </b></p><p id="m4Field"/></td>
-					<td class="thin-border"><b>Field: </b></p><p id="m5Field"/></td>
+					<td class="thin-border"><p><b>Field: </b></p><p id="m0Field"/>
+					<td class="thin-border"><p><b>Field: </b></p><p id="m1Field"/>
+					<td class="thin-border"><p><b>Field: </b></p><p id="m2Field"/>
+					<td class="thin-border"><p><b>Field: </b></p><p id="m3Field"/>
+					<td class="thin-border"><p><b>Field: </b></p><p id="m4Field"/>
+					<td class="thin-border"><p><b>Field: </b></p><p id="m5Field"/>
 				</tr>
 				<tr>
-					<td class="thin-border"><b>X-Antibody: </b></p><p id="m0HasX"/></td>
-					<td class="thin-border"><b>X-Antibody: </b></p><p id="m1HasX"/></td>
-					<td class="thin-border"><b>X-Antibody: </b></p><p id="m2HasX"/></td>
-					<td class="thin-border"><b>X-Antibody: </b></p><p id="m3HasX"/></td>
-					<td class="thin-border"><b>X-Antibody: </b></p><p id="m4HasX"/></td>
-					<td class="thin-border"><b>X-Antibody: </b></p><p id="m5HasX"/></td>
+					<td class="thin-border"><p><b>X-Antibody: </b></p><p id="m0HasX"/>
+					<td class="thin-border"><p><b>X-Antibody: </b></p><p id="m1HasX"/>
+					<td class="thin-border"><p><b>X-Antibody: </b></p><p id="m2HasX"/>
+					<td class="thin-border"><p><b>X-Antibody: </b></p><p id="m3HasX"/>
+					<td class="thin-border"><p><b>X-Antibody: </b></p><p id="m4HasX"/>
+					<td class="thin-border"><p><b>X-Antibody: </b></p><p id="m5HasX"/>
 				</tr>
-			</table>
-			<div class="separator">
-			<!-- options and mon selector -->
-			<table class="thick-border">
+				<tr class="darkPurple">
+					<th colspan="6" class="thick-border"><p>- Selection Filters -</p></th>
+				</tr>
+				<tr class="purple">
+					<th class="thin-border"><p>Baby I / Fresh</p></th>
+					<th class="thin-border"><p>Baby II / In-Training</p></th>
+					<th class="thin-border"><p>Child / Rookie</p></th>
+					<th class="thin-border"><p>Adult / Champion</p></th>
+					<th class="thin-border"><p>Perfect / Ultimate</p></th>
+					<th class="thin-border"><p>Ultimate / Mega</p></th>
+				</tr>
 				<tr>
-					<td class="thin-column-border"><select id="l0List" onChange="onSelect(this.value, 0)"/></td>
-					<td class="thin-column-border"><select id="l1List" onChange="onSelect(this.value, 1)"/></td>
-					<td class="thin-column-border"><select id="l2List" onChange="onSelect(this.value, 2)"/></td>
-					<td class="thin-column-border"><select id="l3List" onChange="onSelect(this.value, 3)"/></td>
-					<td class="thin-column-border"><select id="l4List" onChange="onSelect(this.value, 4)"/></td>
-					<td class="thin-column-border"><select id="l5List" onChange="onSelect(this.value, 5)"/></td>
+					<td class="thin-border"><select id="l0List" onchange="onSelect(this.value, 0)"/>
+					<td class="thin-border"><select id="l1List" onchange="onSelect(this.value, 1)"/>
+					<td class="thin-border"><select id="l2List" onchange="onSelect(this.value, 2)"/>
+					<td class="thin-border"><select id="l3List" onchange="onSelect(this.value, 3)"/>
+					<td class="thin-border"><select id="l4List" onchange="onSelect(this.value, 4)"/>
+					<td class="thin-border"><select id="l5List" onchange="onSelect(this.value, 5)"/>
+				</tr>
+				<tr>
+					<td class="thin-border">
+						<p><b>Level:</b></p><br/>
+						<input id="c0LevelBaby I" type="checkbox" name="level" value="Baby I" onclick="updateSetting(this, 0)"/>
+						<label for="Baby I">Baby I</label><br/>
+						<input id="c0LevelArmor" type="checkbox" name="level" value="Armor" onclick="updateSetting(this, 0)"/>
+						<label for="Armor">Armor</label><br/>
+						<input id="c0LevelHybrid" type="checkbox" name="level" value="Hybrid" onclick="updateSetting(this, 0)"/>		
+						<label for="Hybrid">Hybrid</label><br/>
+						<input id="c0LevelUnknown" type="checkbox" name="level" value="Unknown" onclick="updateSetting(this, 0)"/>		
+						<label for="Unknown">Unknown</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Level:</b></p><br/>
+						<input id="c1LevelBaby II" type="checkbox" name="level" value="Baby II" onclick="updateSetting(this, 1)"/>
+						<label for="Baby II">Baby II</label><br/>
+						<input id="c1LevelArmor" type="checkbox" name="level" value="Armor" onclick="updateSetting(this, 1)"/>
+						<label for="Armor">Armor</label><br/>
+						<input id="c1LevelHybrid" type="checkbox" name="level" value="Hybrid" onclick="updateSetting(this, 1)"/>		
+						<label for="Hybrid">Hybrid</label><br/>
+						<input id="c1LevelUnknown" type="checkbox" name="level" value="Unknown" onclick="updateSetting(this, 1)"/>		
+						<label for="Unknown">Unknown</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Level:</b></p><br/>
+						<input id="c2LevelChild" type="checkbox" name="level" value="Child" onclick="updateSetting(this, 2)"/>
+						<label for="Child">Child</label><br/>
+						<input id="c2LevelArmor" type="checkbox" name="level" value="Armor" onclick="updateSetting(this, 2)"/>
+						<label for="Armor">Armor</label><br/>
+						<input id="c2LevelHybrid" type="checkbox" name="level" value="Hybrid" onclick="updateSetting(this, 2)"/>		
+						<label for="Hybrid">Hybrid</label><br/>
+						<input id="c2LevelUnknown" type="checkbox" name="level" value="Unknown" onclick="updateSetting(this, 2)"/>		
+						<label for="Unknown">Unknown</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Level:</b></p><br/>
+						<input id="c3LevelAdult" type="checkbox" name="level" value="Adult" onclick="updateSetting(this, 3)"/>
+						<label for="Adult">Adult</label><br/>
+						<input id="c3LevelArmor" type="checkbox" name="level" value="Armor" onclick="updateSetting(this, 3)"/>
+						<label for="Armor">Armor</label><br/>
+						<input id="c3LevelHybrid" type="checkbox" name="level" value="Hybrid" onclick="updateSetting(this, 3)"/>		
+						<label for="Hybrid">Hybrid</label><br/>
+						<input id="c3LevelUnknown" type="checkbox" name="level" value="Unknown" onclick="updateSetting(this, 3)"/>		
+						<label for="Unknown">Unknown</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Level:</b></p><br/>
+						<input id="c4LevelPerfect" type="checkbox" name="level" value="Perfect" onclick="updateSetting(this, 4)"/>
+						<label for="Perfect">Perfect</label><br/>
+						<input id="c4LevelArmor" type="checkbox" name="level" value="Armor" onclick="updateSetting(this, 4)"/>
+						<label for="Armor">Armor</label><br/>
+						<input id="c4LevelHybrid" type="checkbox" name="level" value="Hybrid" onclick="updateSetting(this, 4)"/>		
+						<label for="Hybrid">Hybrid</label><br/>
+						<input id="c4LevelUnknown" type="checkbox" name="level" value="Unknown" onclick="updateSetting(this, 4)"/>		
+						<label for="Unknown">Unknown</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Level:</b></p><br/>
+						<input id="c5LevelUltimate" type="checkbox" name="level" value="Ultimate" onclick="updateSetting(this, 5)"/>
+						<label for="Ultimate">Ultimate</label><br/>
+						<input id="c5LevelArmor" type="checkbox" name="level" value="Armor" onclick="updateSetting(this, 5)"/>
+						<label for="Armor">Armor</label><br/>
+						<input id="c5LevelHybrid" type="checkbox" name="level" value="Hybrid" onclick="updateSetting(this, 5)"/>		
+						<label for="Hybrid">Hybrid</label><br/>
+						<input id="c5LevelUnknown" type="checkbox" name="level" value="Unknown" onclick="updateSetting(this, 5)"/>		
+						<label for="Unknown">Unknown</label><br/>
+					</td>
+				</tr>
+				<tr>
+					<td class="thin-border">
+						<p><b>Attribute:</b></p><br/>
+						<input id="c0AttributeVaccine" type="checkbox" name="attribute" value="Vaccine" onclick="updateSetting(this, 0)"/>
+						<label for="Vaccine">Vaccine</label><br/>
+						<input id="c0AttributeData" type="checkbox" name="attribute" value="Data" onclick="updateSetting(this, 0)"/>
+						<label for="Data">Data</label><br/>
+						<input id="c0AttributeVirus" type="checkbox" name="attribute" value="Virus" onclick="updateSetting(this, 0)"/>
+						<label for="Virus">Virus</label><br/>
+						<input id="c0AttributeFree/None" type="checkbox" name="attribute" value="Free/None" onclick="updateSetting(this, 0)"/>
+						<label for="Free/None">Free/None</label><br/>
+						<input id="c0AttributeVariable" type="checkbox" name="attribute" value="Variable" onclick="updateSetting(this, 0)"/>
+						<label for="Variable">Variable</label><br/>
+						<input id="c0AttributeUnknown" type="checkbox" name="attribute" value="Unknown" onclick="updateSetting(this, 0)"/>
+						<label for="Unknown">Unknown</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Attribute:</b></p><br/>
+						<input id="c1AttributeVaccine" type="checkbox" name="attribute" value="Vaccine" onclick="updateSetting(this, 1)"/>
+						<label for="Vaccine">Vaccine</label><br/>
+						<input id="c1AttributeData" type="checkbox" name="attribute" value="Data" onclick="updateSetting(this, 1)"/>
+						<label for="Data">Data</label><br/>
+						<input id="c1AttributeVirus" type="checkbox" name="attribute" value="Virus" onclick="updateSetting(this, 1)"/>
+						<label for="Virus">Virus</label><br/>
+						<input id="c1AttributeFree/None" type="checkbox" name="attribute" value="Free/None" onclick="updateSetting(this, 1)"/>
+						<label for="Free/None">Free/None</label><br/>
+						<input id="c1AttributeVariable" type="checkbox" name="attribute" value="Variable" onclick="updateSetting(this, 1)"/>
+						<label for="Variable">Variable</label><br/>
+						<input id="c1AttributeUnknown" type="checkbox" name="attribute" value="Unknown" onclick="updateSetting(this, 1)"/>
+						<label for="Unknown">Unknown</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Attribute:</b></p><br/>
+						<input id="c2AttributeVaccine" type="checkbox" name="attribute" value="Vaccine" onclick="updateSetting(this, 2)"/>
+						<label for="Vaccine">Vaccine</label><br/>
+						<input id="c2AttributeData" type="checkbox" name="attribute" value="Data" onclick="updateSetting(this, 2)"/>
+						<label for="Data">Data</label><br/>
+						<input id="c2AttributeVirus" type="checkbox" name="attribute" value="Virus" onclick="updateSetting(this, 2)"/>
+						<label for="Virus">Virus</label><br/>
+						<input id="c2AttributeFree/None" type="checkbox" name="attribute" value="Free/None" onclick="updateSetting(this, 2)"/>
+						<label for="Free/None">Free/None</label><br/>
+						<input id="c2AttributeVariable" type="checkbox" name="attribute" value="Variable" onclick="updateSetting(this, 2)"/>
+						<label for="Variable">Variable</label><br/>
+						<input id="c2AttributeUnknown" type="checkbox" name="attribute" value="Unknown" onclick="updateSetting(this, 2)"/>
+						<label for="Unknown">Unknown</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Attribute:</b></p><br/>
+						<input id="c3AttributeVaccine" type="checkbox" name="attribute" value="Vaccine" onclick="updateSetting(this, 3)"/>
+						<label for="Vaccine">Vaccine</label><br/>
+						<input id="c3AttributeData" type="checkbox" name="attribute" value="Data" onclick="updateSetting(this, 3)"/>
+						<label for="Data">Data</label><br/>
+						<input id="c3AttributeVirus" type="checkbox" name="attribute" value="Virus" onclick="updateSetting(this, 3)"/>
+						<label for="Virus">Virus</label><br/>
+						<input id="c3AttributeFree/None" type="checkbox" name="attribute" value="Free/None" onclick="updateSetting(this, 3)"/>
+						<label for="Free/None">Free/None</label><br/>
+						<input id="c3AttributeVariable" type="checkbox" name="attribute" value="Variable" onclick="updateSetting(this, 3)"/>
+						<label for="Variable">Variable</label><br/>
+						<input id="c3AttributeUnknown" type="checkbox" name="attribute" value="Unknown" onclick="updateSetting(this, 3)"/>
+						<label for="Unknown">Unknown</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Attribute:</b></p><br/>
+						<input id="c4AttributeVaccine" type="checkbox" name="attribute" value="Vaccine" onclick="updateSetting(this, 4)"/>
+						<label for="Vaccine">Vaccine</label><br/>
+						<input id="c4AttributeData" type="checkbox" name="attribute" value="Data" onclick="updateSetting(this, 4)"/>
+						<label for="Data">Data</label><br/>
+						<input id="c4AttributeVirus" type="checkbox" name="attribute" value="Virus" onclick="updateSetting(this, 4)"/>
+						<label for="Virus">Virus</label><br/>
+						<input id="c4AttributeFree/None" type="checkbox" name="attribute" value="Free/None" onclick="updateSetting(this, 4)"/>
+						<label for="Free/None">Free/None</label><br/>
+						<input id="c4AttributeVariable" type="checkbox" name="attribute" value="Variable" onclick="updateSetting(this, 4)"/>
+						<label for="Variable">Variable</label><br/>
+						<input id="c4AttributeUnknown" type="checkbox" name="attribute" value="Unknown" onclick="updateSetting(this, 4)"/>
+						<label for="Unknown">Unknown</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Attribute:</b></p><br/>
+						<input id="c5AttributeVaccine" type="checkbox" name="attribute" value="Vaccine" onclick="updateSetting(this, 5)"/>
+						<label for="Vaccine">Vaccine</label><br/>
+						<input id="c5AttributeData" type="checkbox" name="attribute" value="Data" onclick="updateSetting(this, 5)"/>
+						<label for="Data">Data</label><br/>
+						<input id="c5AttributeVirus" type="checkbox" name="attribute" value="Virus" onclick="updateSetting(this, 5)"/>
+						<label for="Virus">Virus</label><br/>
+						<input id="c5AttributeFree/None" type="checkbox" name="attribute" value="Free/None" onclick="updateSetting(this, 5)"/>
+						<label for="Free/None">Free/None</label><br/>
+						<input id="c5AttributeVariable" type="checkbox" name="attribute" value="Variable" onclick="updateSetting(this, 5)"/>
+						<label for="Variable">Variable</label><br/>
+						<input id="c5AttributeUnknown" type="checkbox" name="attribute" value="Unknown" onclick="updateSetting(this, 5)"/>
+						<label for="Unknown">Unknown</label><br/>
+					</td>
+				</tr>
+				<tr>
+					<td class="thin-border">
+						<p><b>Field:</b></p><br/>
+						<input id="c0FieldDeep Savers" type="checkbox" name="field" value="Deep Savers" onclick="updateSetting(this, 0)"/>
+						<label for="Deep Savers">Deep Savers</label><br/>
+						<input id="c0FieldNature Spirits" type="checkbox" name="field" value="Nature Spirits" onclick="updateSetting(this, 0)"/>
+						<label for="Nature Spirits">Nature Spirits</label><br/>
+						<input id="c0FieldVirus Busters" type="checkbox" name="field" value="Virus Busters" onclick="updateSetting(this, 0)"/>
+						<label for="Virus Busters">Virus Busters</label><br/>
+						<input id="c0FieldWind Guardians" type="checkbox" name="field" value="Wind Guardians" onclick="updateSetting(this, 0)"/>
+						<label for="Wind Guardians">Wind Guardians</label><br/>
+						<input id="c0FieldDragon's Roar" type="checkbox" name="field" value="Dragon's Roar" onclick="updateSetting(this, 0)"/>
+						<label for="Dragon's Roar">Dragon's Roar</label><br/>
+						<input id="c0FieldNightmare Soldiers" type="checkbox" name="field" value="Nightmare Soldiers" onclick="updateSetting(this, 0)"/>
+						<label for="Nightmare Soldiers">Nightmare Soldiers</label><br/>
+						<input id="c0FieldMetal Empire" type="checkbox" name="field" value="Metal Empire" onclick="updateSetting(this, 0)"/>
+						<label for="Metal Empire">Metal Empire</label><br/>
+						<input id="c0FieldJungle Troopers" type="checkbox" name="field" value="Jungle Troopers" onclick="updateSetting(this, 0)"/>
+						<label for="Jungle Troopers">Jungle Troopers</label><br/>
+						<input id="c0FieldDark Area" type="checkbox" name="field" value="Dark Area" onclick="updateSetting(this, 0)"/>
+						<label for="Dark Area">Dark Area</label><br/>
+						<input id="c0FieldUnknown" type="checkbox" name="field" value="Unknown" onclick="updateSetting(this, 0)"/>
+						<label for="Unknown">Unknown</label><br/>
+						<input id="c0FieldN/A" type="checkbox" name="field" value="N/A" onclick="updateSetting(this, 0)"/>
+						<label for="N/A">N/A</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Field:</b></p><br/>
+						<input id="c1FieldDeep Savers" type="checkbox" name="field" value="Deep Savers" onclick="updateSetting(this, 1)"/>
+						<label for="Deep Savers">Deep Savers</label><br/>
+						<input id="c1FieldNature Spirits" type="checkbox" name="field" value="Nature Spirits" onclick="updateSetting(this, 1)"/>
+						<label for="Nature Spirits">Nature Spirits</label><br/>
+						<input id="c1FieldVirus Busters" type="checkbox" name="field" value="Virus Busters" onclick="updateSetting(this, 1)"/>
+						<label for="Virus Busters">Virus Busters</label><br/>
+						<input id="c1FieldWind Guardians" type="checkbox" name="field" value="Wind Guardians" onclick="updateSetting(this, 1)"/>
+						<label for="Wind Guardians">Wind Guardians</label><br/>
+						<input id="c1FieldDragon's Roar" type="checkbox" name="field" value="Dragon's Roar" onclick="updateSetting(this, 1)"/>
+						<label for="Dragon's Roar">Dragon's Roar</label><br/>
+						<input id="c1FieldNightmare Soldiers" type="checkbox" name="field" value="Nightmare Soldiers" onclick="updateSetting(this, 1)"/>
+						<label for="Nightmare Soldiers">Nightmare Soldiers</label><br/>
+						<input id="c1FieldMetal Empire" type="checkbox" name="field" value="Metal Empire" onclick="updateSetting(this, 1)"/>
+						<label for="Metal Empire">Metal Empire</label><br/>
+						<input id="c1FieldJungle Troopers" type="checkbox" name="field" value="Jungle Troopers" onclick="updateSetting(this, 1)"/>
+						<label for="Jungle Troopers">Jungle Troopers</label><br/>
+						<input id="c1FieldDark Area" type="checkbox" name="field" value="Dark Area" onclick="updateSetting(this, 1)"/>
+						<label for="Dark Area">Dark Area</label><br/>
+						<input id="c1FieldUnknown" type="checkbox" name="field" value="Unknown" onclick="updateSetting(this, 1)"/>
+						<label for="Unknown">Unknown</label><br/>
+						<input id="c1FieldN/A" type="checkbox" name="field" value="N/A" onclick="updateSetting(this, 1)"/>
+						<label for="N/A">N/A</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Field:</b></p><br/>
+						<input id="c2FieldDeep Savers" type="checkbox" name="field" value="Deep Savers" onclick="updateSetting(this, 2)"/>
+						<label for="Deep Savers">Deep Savers</label><br/>
+						<input id="c2FieldNature Spirits" type="checkbox" name="field" value="Nature Spirits" onclick="updateSetting(this, 2)"/>
+						<label for="Nature Spirits">Nature Spirits</label><br/>
+						<input id="c2FieldVirus Busters" type="checkbox" name="field" value="Virus Busters" onclick="updateSetting(this, 2)"/>
+						<label for="Virus Busters">Virus Busters</label><br/>
+						<input id="c2FieldWind Guardians" type="checkbox" name="field" value="Wind Guardians" onclick="updateSetting(this, 2)"/>
+						<label for="Wind Guardians">Wind Guardians</label><br/>
+						<input id="c2FieldDragon's Roar" type="checkbox" name="field" value="Dragon's Roar" onclick="updateSetting(this, 2)"/>
+						<label for="Dragon's Roar">Dragon's Roar</label><br/>
+						<input id="c2FieldNightmare Soldiers" type="checkbox" name="field" value="Nightmare Soldiers" onclick="updateSetting(this, 2)"/>
+						<label for="Nightmare Soldiers">Nightmare Soldiers</label><br/>
+						<input id="c2FieldMetal Empire" type="checkbox" name="field" value="Metal Empire" onclick="updateSetting(this, 2)"/>
+						<label for="Metal Empire">Metal Empire</label><br/>
+						<input id="c2FieldJungle Troopers" type="checkbox" name="field" value="Jungle Troopers" onclick="updateSetting(this, 2)"/>
+						<label for="Jungle Troopers">Jungle Troopers</label><br/>
+						<input id="c2FieldDark Area" type="checkbox" name="field" value="Dark Area" onclick="updateSetting(this, 2)"/>
+						<label for="Dark Area">Dark Area</label><br/>
+						<input id="c2FieldUnknown" type="checkbox" name="field" value="Unknown" onclick="updateSetting(this, 2)"/>
+						<label for="Unknown">Unknown</label><br/>
+						<input id="c2FieldN/A" type="checkbox" name="field" value="N/A" onclick="updateSetting(this, 2)"/>
+						<label for="N/A">N/A</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Field:</b></p><br/>
+						<input id="c3FieldDeep Savers" type="checkbox" name="field" value="Deep Savers" onclick="updateSetting(this, 3)"/>
+						<label for="Deep Savers">Deep Savers</label><br/>
+						<input id="c3FieldNature Spirits" type="checkbox" name="field" value="Nature Spirits" onclick="updateSetting(this, 3)"/>
+						<label for="Nature Spirits">Nature Spirits</label><br/>
+						<input id="c3FieldVirus Busters" type="checkbox" name="field" value="Virus Busters" onclick="updateSetting(this, 3)"/>
+						<label for="Virus Busters">Virus Busters</label><br/>
+						<input id="c3FieldWind Guardians" type="checkbox" name="field" value="Wind Guardians" onclick="updateSetting(this, 3)"/>
+						<label for="Wind Guardians">Wind Guardians</label><br/>
+						<input id="c3FieldDragon's Roar" type="checkbox" name="field" value="Dragon's Roar" onclick="updateSetting(this, 3)"/>
+						<label for="Dragon's Roar">Dragon's Roar</label><br/>
+						<input id="c3FieldNightmare Soldiers" type="checkbox" name="field" value="Nightmare Soldiers" onclick="updateSetting(this, 3)"/>
+						<label for="Nightmare Soldiers">Nightmare Soldiers</label><br/>
+						<input id="c3FieldMetal Empire" type="checkbox" name="field" value="Metal Empire" onclick="updateSetting(this, 3)"/>
+						<label for="Metal Empire">Metal Empire</label><br/>
+						<input id="c3FieldJungle Troopers" type="checkbox" name="field" value="Jungle Troopers" onclick="updateSetting(this, 3)"/>
+						<label for="Jungle Troopers">Jungle Troopers</label><br/>
+						<input id="c3FieldDark Area" type="checkbox" name="field" value="Dark Area" onclick="updateSetting(this, 3)"/>
+						<label for="Dark Area">Dark Area</label><br/>
+						<input id="c3FieldUnknown" type="checkbox" name="field" value="Unknown" onclick="updateSetting(this, 3)"/>
+						<label for="Unknown">Unknown</label><br/>
+						<input id="c3FieldN/A" type="checkbox" name="field" value="N/A" onclick="updateSetting(this, 3)"/>
+						<label for="N/A">N/A</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Field:</b></p><br/>
+						<input id="c4FieldDeep Savers" type="checkbox" name="field" value="Deep Savers" onclick="updateSetting(this, 4)"/>
+						<label for="Deep Savers">Deep Savers</label><br/>
+						<input id="c4FieldNature Spirits" type="checkbox" name="field" value="Nature Spirits" onclick="updateSetting(this, 4)"/>
+						<label for="Nature Spirits">Nature Spirits</label><br/>
+						<input id="c4FieldVirus Busters" type="checkbox" name="field" value="Virus Busters" onclick="updateSetting(this, 4)"/>
+						<label for="Virus Busters">Virus Busters</label><br/>
+						<input id="c4FieldWind Guardians" type="checkbox" name="field" value="Wind Guardians" onclick="updateSetting(this, 4)"/>
+						<label for="Wind Guardians">Wind Guardians</label><br/>
+						<input id="c4FieldDragon's Roar" type="checkbox" name="field" value="Dragon's Roar" onclick="updateSetting(this, 4)"/>
+						<label for="Dragon's Roar">Dragon's Roar</label><br/>
+						<input id="c4FieldNightmare Soldiers" type="checkbox" name="field" value="Nightmare Soldiers" onclick="updateSetting(this, 4)"/>
+						<label for="Nightmare Soldiers">Nightmare Soldiers</label><br/>
+						<input id="c4FieldMetal Empire" type="checkbox" name="field" value="Metal Empire" onclick="updateSetting(this, 4)"/>
+						<label for="Metal Empire">Metal Empire</label><br/>
+						<input id="c4FieldJungle Troopers" type="checkbox" name="field" value="Jungle Troopers" onclick="updateSetting(this, 4)"/>
+						<label for="Jungle Troopers">Jungle Troopers</label><br/>
+						<input id="c4FieldDark Area" type="checkbox" name="field" value="Dark Area" onclick="updateSetting(this, 4)"/>
+						<label for="Dark Area">Dark Area</label><br/>
+						<input id="c4FieldUnknown" type="checkbox" name="field" value="Unknown" onclick="updateSetting(this, 4)"/>
+						<label for="Unknown">Unknown</label><br/>
+						<input id="c4FieldN/A" type="checkbox" name="field" value="N/A" onclick="updateSetting(this, 4)"/>
+						<label for="N/A">N/A</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>Field:</b></p><br/>
+						<input id="c5FieldDeep Savers" type="checkbox" name="field" value="Deep Savers" onclick="updateSetting(this, 5)"/>
+						<label for="Deep Savers">Deep Savers</label><br/>
+						<input id="c5FieldNature Spirits" type="checkbox" name="field" value="Nature Spirits" onclick="updateSetting(this, 5)"/>
+						<label for="Nature Spirits">Nature Spirits</label><br/>
+						<input id="c5FieldVirus Busters" type="checkbox" name="field" value="Virus Busters" onclick="updateSetting(this, 5)"/>
+						<label for="Virus Busters">Virus Busters</label><br/>
+						<input id="c5FieldWind Guardians" type="checkbox" name="field" value="Wind Guardians" onclick="updateSetting(this, 5)"/>
+						<label for="Wind Guardians">Wind Guardians</label><br/>
+						<input id="c5FieldDragon's Roar" type="checkbox" name="field" value="Dragon's Roar" onclick="updateSetting(this, 5)"/>
+						<label for="Dragon's Roar">Dragon's Roar</label><br/>
+						<input id="c5FieldNightmare Soldiers" type="checkbox" name="field" value="Nightmare Soldiers" onclick="updateSetting(this, 5)"/>
+						<label for="Nightmare Soldiers">Nightmare Soldiers</label><br/>
+						<input id="c5FieldMetal Empire" type="checkbox" name="field" value="Metal Empire" onclick="updateSetting(this, 5)"/>
+						<label for="Metal Empire">Metal Empire</label><br/>
+						<input id="c5FieldJungle Troopers" type="checkbox" name="field" value="Jungle Troopers" onclick="updateSetting(this, 5)"/>
+						<label for="Jungle Troopers">Jungle Troopers</label><br/>
+						<input id="c5FieldDark Area" type="checkbox" name="field" value="Dark Area" onclick="updateSetting(this, 5)"/>
+						<label for="Dark Area">Dark Area</label><br/>
+						<input id="c5FieldUnknown" type="checkbox" name="field" value="Unknown" onclick="updateSetting(this, 5)"/>
+						<label for="Unknown">Unknown</label><br/>
+						<input id="c5FieldN/A" type="checkbox" name="field" value="N/A" onclick="updateSetting(this, 5)"/>
+						<label for="N/A">N/A</label><br/>
+					</td>
+				</tr>
+				<tr>
+					<td class="thin-border">
+						<p><b>X-Antibody status:</b></p><br/>
+						<input id="c0AntibodyNot a carrier" type="checkbox" name="antibody" value="Not a carrier" onclick="updateSetting(this, 0)"/>
+						<label for="Not a carrier">Not a carrier</label><br/>
+						<input id="c0AntibodyCarrier" type="checkbox" name="antibody" value="Carrier" onclick="updateSetting(this, 0)"/>
+						<label for="Carrier">Carrier</label><br/>
+						<input id="c0AntibodyNatural Carrier" type="checkbox" name="antibody" value="Natural Carrier" onclick="updateSetting(this, 0)"/>
+						<label for="Natural Carrier">Natural Carrier</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>X-Antibody status:</b></p><br/>
+						<input id="c1AntibodyNot a carrier" type="checkbox" name="antibody" value="Not a carrier" onclick="updateSetting(this, 1)"/>
+						<label for="Not a carrier">Not a carrier</label><br/>
+						<input id="c1AntibodyCarrier" type="checkbox" name="antibody" value="Carrier" onclick="updateSetting(this, 1)"/>
+						<label for="Carrier">Carrier</label><br/>
+						<input id="c1AntibodyNatural Carrier" type="checkbox" name="antibody" value="Natural Carrier" onclick="updateSetting(this, 1)"/>
+						<label for="Natural Carrier">Natural Carrier</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>X-Antibody status:</b></p><br/>
+						<input id="c2AntibodyNot a carrier" type="checkbox" name="antibody" value="Not a carrier" onclick="updateSetting(this, 2)"/>
+						<label for="Not a carrier">Not a carrier</label><br/>
+						<input id="c2AntibodyCarrier" type="checkbox" name="antibody" value="Carrier" onclick="updateSetting(this, 2)"/>
+						<label for="Carrier">Carrier</label><br/>
+						<input id="c2AntibodyNatural Carrier" type="checkbox" name="antibody" value="Natural Carrier" onclick="updateSetting(this, 2)"/>
+						<label for="Natural Carrier">Natural Carrier</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>X-Antibody status:</b></p><br/>
+						<input id="c3AntibodyNot a carrier" type="checkbox" name="antibody" value="Not a carrier" onclick="updateSetting(this, 3)"/>
+						<label for="Not a carrier">Not a carrier</label><br/>
+						<input id="c3AntibodyCarrier" type="checkbox" name="antibody" value="Carrier" onclick="updateSetting(this, 3)"/>
+						<label for="Carrier">Carrier</label><br/>
+						<input id="c3AntibodyNatural Carrier" type="checkbox" name="antibody" value="Natural Carrier" onclick="updateSetting(this, 3)"/>
+						<label for="Natural Carrier">Natural Carrier</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>X-Antibody status:</b></p><br/>
+						<input id="c4AntibodyNot a carrier" type="checkbox" name="antibody" value="Not a carrier" onclick="updateSetting(this, 4)"/>
+						<label for="Not a carrier">Not a carrier</label><br/>
+						<input id="c4AntibodyCarrier" type="checkbox" name="antibody" value="Carrier" onclick="updateSetting(this, 4)"/>
+						<label for="Carrier">Carrier</label><br/>
+						<input id="c4AntibodyNatural Carrier" type="checkbox" name="antibody" value="Natural Carrier" onclick="updateSetting(this, 4)"/>
+						<label for="Natural Carrier">Natural Carrier</label><br/>
+					</td>
+					<td class="thin-border">
+						<p><b>X-Antibody status:</b></p><br/>
+						<input id="c5AntibodyNot a carrier" type="checkbox" name="antibody" value="Not a carrier" onclick="updateSetting(this, 5)"/>
+						<label for="Not a carrier">Not a carrier</label><br/>
+						<input id="c5AntibodyCarrier" type="checkbox" name="antibody" value="Carrier" onclick="updateSetting(this, 5)"/>
+						<label for="Carrier">Carrier</label><br/>
+						<input id="c5AntibodyNatural Carrier" type="checkbox" name="antibody" value="Natural Carrier" onclick="updateSetting(this, 5)"/>
+						<label for="Natural Carrier">Natural Carrier</label><br/>
+					</td>
+				</tr>
+				<tr  class="darkPurple">
+					<th colspan="6" class="thick-border" align="center" onclick="refresh()">
+						<button type="button">Apply Filters</button>
+					</th>
 				</tr>
 			</table>
 		</div>
+		<script>updateCheckboxes()</script>
 	</body>
 </html>
