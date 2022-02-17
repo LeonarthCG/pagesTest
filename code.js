@@ -99,17 +99,17 @@ for (var i = 0; i <= 5; i++) {
 	}
 	//if the settings are empty, set to default
 	if (settings["level"][i].length == 0) {
-		settings["level"][i] = defaultLevels[i];
+		settings["level"][i] = [...defaultLevels[i]];
 	}
 	//same as above
 	if (settings["attribute"][i].length == 0) {
-		settings["attribute"][i] = validAttributes;
+		settings["attribute"][i] = [...validAttributes];
 	}
 	if (settings["field"][i].length == 0) {
-		settings["field"][i] = validFields;
+		settings["field"][i] = [...validFields];
 	}
 	if (settings["antibody"][i].length == 0) {
-		settings["antibody"][i] = validAntibodies;
+		settings["antibody"][i] = [...validAntibodies];
 	}
 	
 }
@@ -202,7 +202,6 @@ function updateUrl() {
 	}
 	//for each mon, add their settings
 	for (i = 0; i <= 5; i++) {
-		newUrl += "s" + i + "="
 		var s = 0;
 		//for each possible settings
 		for (var j = 0; j < 4; j++) {
@@ -232,7 +231,7 @@ function updateUrl() {
 			}
 		}
 		//finally, add the resulting number to the url, in radix 32
-		newUrl += s.toString(32) + "&";
+		newUrl += "s" + i + "=" + s.toString(32) + "&";
 	}
 	//and update the url
 	window.history.pushState("", "Title", newUrl);
